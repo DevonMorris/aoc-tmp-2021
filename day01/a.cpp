@@ -1,4 +1,5 @@
 #include "processor.h"
+#include <cstddef>
 
 template <typename Data>
 struct Part1;
@@ -24,4 +25,4 @@ struct Part1<DataT<int, Data...>>
 
 report<int, Processor<int, Part1,
 #include "./data.txt"
->::value> solution1;
+>::value> solution;

@@ -7,6 +7,8 @@ CFLAGS  = -g -Wall -O1 -ftemplate-depth=10000
 
 INC = include
 
-%: day%/main.cpp
-	echo "Making $@"
-	$(CC) $(CFLAGS) -I$(INC) day$@/main.cpp
+%a: day%/a.cpp
+	$(CC) $(CFLAGS) -I$(INC) $^
+
+%b: day%/b.cpp
+	$(CC) $(CFLAGS) -I$(INC) $^
